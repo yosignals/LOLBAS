@@ -1,0 +1,19 @@
+Name: iediagcmd.exe
+Description: IE Diag CMD
+Author: 'John Carroll'
+Created: '2021-11-19'
+Commands:
+  - Command: iediagcmd.exe
+    Description: By launching "C:\Program Files\Internet Explorer\iediagcmd.exe" (full path needed) it will look to Execute ipconfig.exe,route.exe and makecab.exe from the folder it has been called from (similar to Workfolders)
+    Usecase: Can be used to run code, evade defensive countermeasures or to hide as a persistence mechanism
+    Category: Execute
+    Privileges: User
+    MitreID: T1218,
+    OperatingSystem: Windows 8, Windows 8.1, Windows 10, Windows 11
+Full_Path:
+  - Path: C:\Program Files\Internet Explorer\iediagcmd.exe
+Resources:
+  - Link: https://www.ctus.io/2021/04/12/exploading/ - Repeatable Methodology
+Acknowledgement:
+  - Person: 'John Carroll'
+    Handle: '@YoSignals'
